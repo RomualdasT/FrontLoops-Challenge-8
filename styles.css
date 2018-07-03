@@ -1,0 +1,130 @@
+body {
+  background-color: #f8ebe9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: 5% auto;
+  background-color: #fff;
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1fr;
+  grid-template-areas:
+  "photo . countries"
+  "photo title title"
+  "photo video texts";
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+
+.photo {
+  grid-area: photo;
+  background: url('img/background.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4vh 0 0 3vw;
+}
+
+.back {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.countries {
+  grid-area: countries;
+  justify-self: end;
+  padding: 4vh 3vw 8vh 0;
+}
+.link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: .5;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  text-transform: uppercase;
+}
+.link:hover {opacity: 1;}
+.link:not(:first-child) {
+  margin-left: 30px;
+}
+.title {
+  grid-area: title;
+  padding-left: 8vw;
+  padding-right: 6vw;
+  align-self: center;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 5rem;
+font-weight: 100;
+line-height: 76px;
+}
+h1::after {
+  content: "";
+  display: inline-block;
+  border-top: 5px solid #000;
+  width: 100px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+.author {
+  margin-bottom: 5vh;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+.video {
+  grid-area: video;
+  margin-left: 8vw;
+  position: relative;
+}
+.pre-img {
+  margin-bottom: 15px;
+}
+.play-btn {
+  border: 10px solid #fff;
+  background-color: #fff;
+  opacity: .4;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+.play-btn:hover {
+  opacity: 1;
+}
+.video .link {
+  margin-left: 0px;
+}
+.photo-link {
+  display: inline;
+  vertical-align: middle;
+}
+
+.text {
+  font-weight: 300;
+  grid-area: texts;
+  padding-bottom: 5vh;
+  font-size: 18px;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  line-height: 34px;
+}
+
+.text p {
+  margin: 0;
+  padding: 0;
+}
