@@ -128,3 +128,103 @@ h1::after {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1600px) {
+  .text {
+    max-width: 70%;
+  }
+
+  .play-btn {
+    top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 901px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 46px;
+  }
+
+  h1::after {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+.container {
+  margin: 1% auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "photo countries"
+  "photo title"
+  "photo video"
+  "photo texts";
+}
+
+.video img {
+  max-width: 80%;
+}
+.video .link {
+  margin-left: 30px;
+}
+
+.video {
+  margin-bottom: 30px;
+}
+
+.play-btn {
+  top: 30%;
+  left: 35%;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "countries"
+    "video"
+    "title"
+    "texts";
+  }
+  .countries {
+    justify-self: start;
+    margin-left: 8vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .photo {
+    display: none;
+  }
+
+  .video a {
+    display: block;
+  }
+
+  .video img {
+    max-width: 80%;
+    justify-self: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        line-height: 56px;
+        margin-bottom: 0px;
+      }
+      .author {
+        margin-top: 0px;
+      }
+
+      .text {
+        max-width: 90%;
+        padding-bottom: 0px;
+      }
+      .play-btn {
+          top: 30%;
+          left: 35%;
+      }
+}
